@@ -1,0 +1,15 @@
+<!-- customer.component.html -->
+
+<h1>Welcome Customer</h1>
+<div *ngFor="let category of categories">
+  <ul class="product-list">
+    <li *ngFor="let product of category.products" class="product-card">
+      <div class="category-name">{{ category.name }}</div>
+      <div class="product-details">
+        <h2>{{ product.name }}</h2>
+        <p>Price: {{ product.price | currency:'USD':'symbol' }}</p>
+        <button (click)="purchaseProduct()">Purchase</button>
+      </div>
+    </li>
+  </ul>
+</div>

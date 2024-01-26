@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   title = 'Grossary_Shop';
+
+  showLogout:boolean=false;
+  showAllProduct:boolean=false;
+  showAddProduct:boolean=false;
+
+
+
+  logout() {
+    alert("logout")
+    throw new Error('Method not implemented.');
+    }
+
 }
